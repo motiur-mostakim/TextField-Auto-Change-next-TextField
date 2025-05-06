@@ -28,10 +28,10 @@ class _AutoNextTextFieldExampleState extends State<AutoNextTextFieldExample> {
               controller: _firstController,
               focusNode: _firstFocusNode,
               maxLength:
-                  10, // যতটুকু টাইপ করলে পরের TextField এ যাবে সেটি নির্ধারণ করুন
+                  11, // যতটুকু টাইপ করলে পরের TextField এ যাবে সেটি নির্ধারণ করুন
               decoration: const InputDecoration(labelText: 'First TextField'),
               onChanged: (value) {
-                if (value.length == 10) {
+                if (value.length == 11) {
                   _firstFocusNode.unfocus();
                   FocusScope.of(context).requestFocus(_secondFocusNode);
                 }
